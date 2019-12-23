@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:src="@drawable/fanhui"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/detailfanhui"/>
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:src="@drawable/diandian"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/detaildiandian"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:src="@drawable/zhuanfa"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/detailzhuanfa"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/detaildiandian"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/detailtv"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:text="商品详情"/>
+
+</RelativeLayout>

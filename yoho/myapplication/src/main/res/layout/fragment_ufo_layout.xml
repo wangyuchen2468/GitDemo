@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="UFO飞碟好物"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ufo_fnc"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/ufo_left_icon"/>
+        <ImageView
+            android:id="@+id/ufo_all"
+            android:layout_marginHorizontal="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/ufo_right_icon"/>
+        <TextView
+            android:padding="10dp"
+            android:drawableLeft="@mipmap/search_icon"
+            android:gravity="center_vertical"
+            android:text="   搜索商品名称或货号"
+            android:background="@drawable/search_ufo_bg_con"
+            android:layout_toRightOf="@id/ufo_fnc"
+            android:layout_toLeftOf="@id/ufo_all"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        app:tabMode="scrollable"
+        android:id="@+id/ufo_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/ufo_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+</LinearLayout>

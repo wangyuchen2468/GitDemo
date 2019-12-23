@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff"
+    tools:context=".mvp.ui.activity.GoodsValuesActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar android:background="#363736"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/activity_detail_tool">
+
+    <com.example.myapplication.mvp.model.utils.GoodsValuesHeadView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/activity_detail_tool">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_banner"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_detail_title"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_detail_price"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textColor="#FF0000"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_detail_priceno"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textColor="#D1CFCF"/>
+
+</LinearLayout>
+
+        <include layout="@layout/gray_bar"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:padding="5dp"
+        android:src="@drawable/cuxiao"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:text="全场下单加￥69购JerrmyVile年历全场下单加￥69购JerrmyVile年历全场"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text=">"/>
+
+</LinearLayout>
+
+    <View
+        android:background="#E2E2DB"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:src="@drawable/honggou"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:text="品质保障"/>
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:src="@drawable/honggou"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:text="支持七天退换货"/>
+
+</LinearLayout>
+
+        <include layout="@layout/gray_bar"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_tab"/>
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:textSize="13sp"
+        android:text="查看更多"/>
+
+        <include layout="@layout/gray_bar"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:src="@drawable/hongbao3"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="各类限量鞋及免单劵限时抽"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
+
+        <include layout="@layout/gray_bar"/>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_detail_biaoqian"
+        android:padding="5dp"
+        android:src="@drawable/biaoqian"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="Levi/s"
+        android:layout_toRightOf="@+id/activity_detail_biaoqian"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:text="进入店铺>"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#F4F4F4"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_tuijian_banner"/>
+
+
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:text="继续拖动，查看商品详情"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+
+   <include layout="@layout/gray_bar"/>
+
+    <View android:background="#E2E2DB"
+        android:layout_height="10dp"
+        android:layout_width="match_parent"/>
+
+    <ImageView
+        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend4"
+        android:scaleType="fitXY"/>
+
+    <ImageView android:layout_height="240dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend5"
+        android:scaleType="fitXY"/>
+
+    <ImageView android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend6"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend7"
+        android:scaleType="fitXY"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_mote_recy"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend8"
+        android:scaleType="fitXY"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_chanpin_recy"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/recommend9"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/xijie1"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/xijie2"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="330dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/xijie3"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/xijie4"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="330dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/xijie5"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:padding="5dp" android:src="@drawable/xijie6"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_height="330dp"
+        android:layout_width="match_parent"
+        android:padding="5dp" android:src="@drawable/xidi"
+        android:scaleType="fitXY"/>
+
+        <include layout="@layout/gray_bar"/>
+
+    <ImageView
+        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/shuoming"
+        android:scaleType="fitXY"/>
+
+        <include layout="@layout/gray_bar"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:text="店铺推荐"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_diantui_recy"/>
+
+        <include layout="@layout/gray_bar"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:text="你可能喜欢"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_detail_youlike_recy"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:src="@drawable/pinpai2"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:text="品牌店铺"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/activity_detail_shou_lin"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+    <ImageView
+        android:layout_marginLeft="2dp"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:id="@+id/activity_detail_shou_img"
+        android:src="@drawable/shoucang1"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_detail_shou_tv"
+        android:textSize="12sp"
+        android:text="收藏"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+    <Button
+        android:background="#FF0000"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:id="@+id/iv_goodsvalues_button"
+        android:textColor="#fff"
+        android:text="加入购物车"/>
+
+</LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>
